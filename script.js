@@ -1,4 +1,8 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by Javascript";
+// Toggle dark mode
+const button = document.createElement("button");
+button.textContent = "Toggle Dark Mode";
+document.body.prepend(button);
 
-document.querySelector("body").appendChild(h2);
+button.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});

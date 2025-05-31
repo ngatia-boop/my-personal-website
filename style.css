@@ -1,3 +1,102 @@
+
+/* 1. Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* 2. Basic Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: burlywood;
+  font-family: 'Roboto', sans-serif;
+  background-color: lightblue;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* 3. Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header img {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* 4. Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.project {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007acc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* 5. Links */
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 6. Button Styling */
+button {
+  padding: 10px 15px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005a99;
+}
+
+/* 7. Dark Mode Support */
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
+.dark-mode .project {
+  background-color: #1e1e1e;
+  border-left: 4px solid #90caf9;
+}
+
+/* 8. Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  .project {
+    font-size: 14px;
+  }
 }
