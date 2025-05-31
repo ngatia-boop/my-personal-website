@@ -24,7 +24,7 @@ header {
 }
 
 header img {
-  border-radius: 50%;
+  border-radius: 150ppx;
   margin-top: 20px;
 }
 
@@ -99,4 +99,33 @@ button:hover {
   .project {
     font-size: 14px;
   }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar ul li a:hoover {
+  color: #ddd;
+}
+section {
+  padding: 60px;
 }
